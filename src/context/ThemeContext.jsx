@@ -21,6 +21,7 @@ export const ThemeContextProvider = ({ children }) => {
   };
 
   useEffect(() => {
+    console.log(theme)
     localStorage.setItem("theme", theme);
   }, [theme]);
 
